@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>prizm</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <style>
+        .svg-background, .svg-image { clip-path: url(#svgPath); }
+    </style>
+</head>
+<body>
+        <nav class="pageNav">
+            <ul class="main">
+                <li class="item"><a href="#">main</a></li>
+                 <li class="item"><a href="#">main1</a></li>
+                 <li class="item"><a href="#">main2</a></li>
+                 <li class="item"><a href="#">work</a></li>
+                 <li class="item"><a href="#">work1</a></li>
+                 <li class="item"><a href="#">work2</a></li>
+                 <li class="item"><a href="#">about me</a></li>
+                 <li class="item"><a href="#">about me1</a></li>
+                 <li class="item"><a href="#">about me2</a></li>
+             </ul>
+         </nav>
+        <header class="header">
+          <div class="burger">
+            <div class="burger__patty"></div>
+            <div class="burger__patty"></div>
+            <div class="burger__patty"></div>
+          </div>
+
+          <nav class="menu">
+            <div class="menu__brand">
+                <h1>서수정</h1>
+                <h2>west2sun@gmail.com</h2>
+                <h2>Jungnang-gu,Seoul,ROK</h2>
+                <h2>kakaotalk: ssj0101</h2>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link mainlink">Main</a></li>
+              <li class="menu__item"><a href="#" class="menu__link worklink">Work</a></li>
+              <li class="menu__item"><a href="#" class="menu__link aboutmelink">About me</a></li>
+            </ul>
+          </nav>
+        </header>
+        <button class="prev slider">previous</button>
+        <button class="next slider">next</button>
+        <button class="up slider">up</button>
+        <button class="down slider">dowm</button>
+        
+        <div class="sectionWrap">
+            <div class="section main">
+                <div class="slide main1"  id="main1">
+                   <div class="logoWrap">
+                       <div class="logoDetail">
+                        <div class="logo">
+                            <svg id="svg-1" class="clip-svg" width="600" height=500>
+                                <rect class='svg-background' width="600" height="500" fill="#ffffff" />
+                                <image id="img-1" class='svg-image' width="1440" height="900" href="img/bg_main.jpg" />
+                            </svg>
+                        </div>
+                        <div class="text">
+                           <h2>port-<br/>folio</h2>
+                           <h3>veritas lux mea</h3>
+                        </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="slide main2 loading" id="main2">
+                    <canvas id="canvas" class="canvas"></canvas>
+                    <div class="logoWrap">
+                          <h4>concept</h4>
+                           <h1>"light"</h1>
+                            <p>밤하늘의 별빛도 아름다운 예술 작품도 모두 빛에서 태어났습니다. 우리는 매일 빛과 더불어 살아가지만, 그 존재가 무엇인지 생각하는 일은 거의 없습니다. 빛의 입자와 파동이 우리 눈의 망막에 닿을 때, 비로소 형형색색의 다채로운 세상이 눈앞에 펼쳐집니다. 언제나 빛은 저의 지적 호기심과 감성을 자극합니다. </p>
+                           <h2>빛과 그림자<br/>프리즘</h2>
+                   </div>
+                </div>
+                <div class="slide main3 on loading" id="main3">
+                    <div class="lamp lamp1">
+                        <label class="bulb on" for="switch"></label>
+                        <div class="cable"></div>
+                    </div>
+                    <div class="lamp lamp2">
+                        <label class="bulb on" for="switch"></label>
+                        <div class="cable"></div>
+                    </div>
+                    <div class="lamp lamp3">
+                        <label class="bulb on" for="switch"></label>
+                        <div class="cable"></div>
+                    </div>
+                    <div id="switch">
+                        <label for="check"><input id="check" type="checkbox"></label>
+                    </div>
+                    
+                     <div class="explain prism">
+                       <div class="title">
+                        <h2>design<br>process</h2>
+                        </div>
+                        <p class="on">
+                        logo/본명에서 반복되는 자음 ㅅ,ㅈ의 형태에서 반복되어 보이는 60deg의 예각과 빛이라는 주제와 연관된 삼각형의 프리즘을 모티브로 디자인
+                        <br>color/다양한 단계의 무채색을 사용
+                        <br>object/빛이라는 주제를 표현할 수 있는 전구, 그림자, 네온 등을 css3, canvas, jq로 구현하고, 프리즘 이미지를 반복
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section work">
+                <div class="slide work1 loading" id="work1">
+                   <div class="logoWrap">
+                   <div class="logoDetail">
+                   
+                    <div class="logo">
+                        <svg id="svg-1" class="clip-svg" width="1200" height=1200>
+                        <rect class='svg-background' width="1200" height="1200" fill="#ffffff" />
+                        <image id="img-1" class='svg-image' width="700" height="700" href="img/bg_work.png" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                       <h2>wo-<br/>rk</h2>
+                       <h3>webdesign/etc</h3>
+                    </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="slide work2 loading" id="work2">
+                    <div class="gallery">
+                       <div class="imgWrap imgWrap1">
+                          <div class="full-content">
+                             <div class="images">  
+                               <div class="overlay-ribbon hide">
+                                  <div class="ribbon-content">
+                                      <a href="https://www.airbusan.com" target="_blank">before <br>site<br>+ </a>
+                                      <br>
+                                      <a href="http://prizm.dothome.co.kr/airbusan/index.html" target="_blank">after<br>site <br>+ </a>
+                                  </div>
+                                </div>
+                                <a target="_blank" href="portfolio/airbusan.html"><img class="monitor" src="img/airbusan_monitor.png" alt="에어부산 모니터"></a>
+                                 <div class="explain">
+                                     <div class="concept">
+                                        <h2>concept</h2>
+                                        <p>에어부산의 CI를 제대로 반영하지 않아 단조로운 분위기의 기존 사이트를 리뉴얼하여 비행하는 항공기의 역동성과 활기참을 표현함</p>
+                                    </div>
+                                    <div class="design">
+                                        <h2>design</h2>
+                                        <p>에어부산의 CI컬러를 활용함과 동시에 주 기능인 예약와 다양한 고객층을 위한 로그인 양식이 직관적으로 작동할 수 있도록 디자인 함</p>
+                                    </div>
+                                 </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="imgWrap imgWrap2">
+                          <div class="full-content">
+                             <!--Image Gallery Begins-->
+                             <div class="images">
+                               <div class="overlay-ribbon hide ribbon2">
+                                  <div class="ribbon-content">
+                                      <a href="http://prizm.dothome.co.kr" target="_blank">after<br>site <br>+ </a>
+                                  </div>
+                                </div>
+                                <a target="_blank" href="http://prizm.dothome.co.kr/portfolio/prizm.html"> <img class="monitor" src="img/prism_monitor.png" alt=""></a>
+                                 <div class="explain">
+                                     <div class="concept">
+                                        <h2>concept</h2>
+                                        <p>다양한 분야의 주요 탐구대상인 '빛'을 주제로 빛과 그림자, 프리즘을 소재로 다양한 분야에 재능을 가진 '나'를 표현</p>
+                                    </div>
+                                    <div class="design">
+                                        <h2>design</h2>
+                                        <p>포트폴리오의 컨셉을 볼 수 있는 main을 시작으로 work, about me 총 세가지 섹션과 각 섹션별로 3개의 슬라이드를 포함하여 3X3 풀페이지로 레이아웃을 디자인하고 직접 구현함</p>
+                                    </div>
+                                 </div>  
+                             </div>
+                          </div>
+                       </div>
+                       <div class="imgWrap imgWrap3">
+                          <div class="full-content">
+                             <!--Image Gallery Begins-->
+                             <div class="images">
+                               <div class="overlay-ribbon hide ribbon3">
+                                  <div class="ribbon-content">
+                                      <a href="http://amazing.dothome.co.kr/lgnsys/main/" target="_blank">after<br>site <br>+ </a>
+                                  </div>
+                                </div>
+                                 <a target="_blank" href="http://amazing.dothome.co.kr/lgnsys/main/"><img class="monitor" src="img/lgnsys_monitor.png" alt=""></a>
+                                 <div class="explain">
+                                     <div class="concept">
+                                        <h2>concept</h2>
+                                        <p>기업형 홈페이지 LG nsys의 홈페이지를 모델로하여 카피함</p>
+                                    </div>
+                                    <div class="design">
+                                        <h2>design</h2>
+                                        <p></p>
+                                    </div>
+                                 </div>  
+                             </div>
+                          </div>
+                       </div>
+                       <div class="balloon"></div>
+                    <div title="Close (Esc)" class="mfp-close hide close">×</div>
+                    </div> 
+                </div><!--end:work2-->
+                <div class="slide work3 loading" id="work3">
+                    <div class="gallery">
+                       <a href="img/artwork_cat.jpg" target="_target" class="imgWrap imgWrap_a"></a>
+                       <a class="imgWrap imgWrap_b"></a>
+                       <a class="imgWrap imgWrap_c"></a>
+                       <a class="imgWrap imgWrap_d"></a>
+                    </div> 
+                </div><!--end:work3-->
+            </div><!--end:work-->
+            <div class="section aboutme">
+                <div class="slide aboutme1 loading" id="aboutme1">
+                   <div class="logoWrap">
+                   <div class="logoDetail">
+                    <div class="logo">
+                        <svg id="svg-1" class="clip-svg" width="1200" height=1200>
+                           <defs>
+                            <linearGradient id="g622" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop stop-color="#FFFFFF" offset="0"/><stop stop-color="#EB3699" offset="1"/>
+                            </linearGradient>
+                           </defs>
+                            <rect class='svg-background' width="1200" height="1200" fill="url(#g622)" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                       <h2>about<br>me</h2>
+                       <h3>resume&amp;PI.psism</h3>
+                    </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="slide aboutme2 loading" id="aboutme2">
+                    <img src="img/aboutme3.jpg" alt="aboutme3">
+                    <div class="text">
+                        <p>대학에서 공학을 전공하고 다양한 디자인 수업을 수료하며 두 분야 중 하나를 선택하는 것이 아니라 두 분야의 교집합 영역에 있는 일을 하고 싶고, 그것이 제가 앞으로 가야할 방향이라고 굳게 마음 먹었습니다.
+                        <br>
+                        포트폴리오의 주제인 '빛'은 공학과 디자인 두 분야에서 다루어지는 중요한 탐구 주제로, 두 분야에 매료된 저를 가장 잘 표현 할 수 있는 소재라고 생각합니다. </p>
+                    </div>
+                </div>
+                <div class="slide aboutme3 loading" id="aboutme3">
+                    <div class="contact">
+                        <div class="contactdetail">
+                            <h1>contact</h1>
+                            <h2>west2sun@gmail.com</h2>
+                            <h2>prizm.dothome.co.kr</h2>
+                            <h2>kakaotalk: ssj0101</h2>
+                        </div>
+                    </div> 
+                    <div class="form">
+                        <div class="formdetail">
+                            <form method="post" action="mail.php">
+                                <input type="text" class="mm01" name="name" required="" placeholder="이름을 입력해주세요."/>
+                                <input type="email" class="mm02" name="email" required="" placeholder="이메일을 입력해주세요."/>
+                                <input type="tel" class="mm03" name="tel" required="" value="010-0000-0000" placeholder="연락처를 입력해주세요."/>
+                                <textarea name="message" class="message" placeholder="메세지를 입력해주세요." required></textarea>
+                                <button type="submit" class="sendBtn" id="btn_submit" value="Send">send me a message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            
+        </div> 
+
+  <svg>
+    <clipPath id="svgPath" version="1.1" width="1200" hight="1200" >
+        <path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M413.9,318l-73.1,127h-51l133.2-231.9l-38.6-69.5l-173,301.9l-61.9,0.1L354.1,90.1L303.6-0.1l-287.8,500l568.8,0.1L482.2,318H413.9z M445.1,382.8L480,445h-70.7L445.1,382.8z"></path>
+    </clipPath>
+  </svg>
+</body>
+    <script src="js/main.js"></script>
+    
+    <script src="js/index.js"></script>
+</html>

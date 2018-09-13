@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>airbusan</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<style>
+    body{ background-color: #fff; 
+  position: relative; margin: 0; padding: 0;}
+    .imgWrap{ display: block; margin: 0 auto; width: 1100px;}
+    a:active, a:hover {outline-width: 0;}
+    a, a:visited, a:link {text-decoration: none;color: #0d0d0d;}
+    a:hover{
+        text-decoration: line-through;
+    }
+.overlay-ribbon {
+  position: fixed;
+  width: 13em;
+  height: 14em;
+  z-index: 9999;
+  top: 0;
+  left: 1%;
+  background: #1e409a;
+  padding: 5px 0;
+  animation: slidein 1.5s ease-in-out forwards;
+}
+
+.ribbon-content {
+  z-index: 99999;
+  position: relative;
+  margin: 20px 5px;
+}
+
+.ribbon-content a {
+    font-size: 20px;
+    margin-top: 0px;
+    display: block;
+    text-align: justify;
+    color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    width: 70px;
+    height: 80px;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.ribbon-content > p{
+  color: #d3d3d3;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  font-size: 12px;
+}
+
+.overlay-ribbon:before {
+  content: "";
+  position: absolute;
+  bottom: -9em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10em solid #1e409a;
+  border-right: 10em solid transparent;
+  z-index: 997;
+}
+
+.overlay-ribbon:after {
+  content: "";
+  position: absolute;
+  bottom: -9em;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 10em solid #1e409a;
+  border-left: 10em solid transparent;
+  z-index: 998;
+}
+
+
+@-webkit-keyframes slidein {
+  from {
+    transform: translate(0, -400px);
+  }
+  to {
+    transform: translate(0,0);
+  }
+}
+
+@-o-keyframes slidein {
+  from {
+    transform: translate(0, -400px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    transform: translate(0, -400px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translate(0, -400px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+</style>
+<body>
+   <div class="overlay-ribbon">
+  <div class="ribbon-content">
+      <a href="https://www.airbusan.com" target="_blank">before <br>site<br>+ </a>
+      <br>
+      <a href="http://prizm.dothome.co.kr/airbusan/index.html" target="_blank">after<br>site <br>+ </a>
+
+  </div>
+</div>
+    <img class="imgWrap" src="img/airbusan.jpg" alt="airbusan">
+   
+</body>
+</html>
